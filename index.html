@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Luxtrader</title>
+	<title>Document</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -13,6 +13,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -95,7 +97,35 @@
 		</header>
 		<main class="page" id="page">
 			<div class="main-slider">
-				<div class="main-slider__body _swiper">
+				<div class="main-slider__body">
+					<div class="main-slider__item item-main-slider">
+						<div class="item-main-slider__content">
+							<div class="item-main-slider__container _container">
+								<div class="title">
+									<div class="title__item">
+										Только эксклюзивные
+									</div>
+									<h1 class="title__main title__main_w title__main_regular">
+										Лоты под аукцион и свободную продажу
+									</h1>
+								</div>
+								<p class="item-main-slider__text">
+									Мы собираем эксклюзивную публику и экслюзивные лоты, даем удобный и
+									автоматизированный сервис по покупке и продаже, а также выставлению лотов на
+									аукцион, предоставляем личные кабинеты, а также оказываем сопутствубщие услуги с
+									продажей редких и дорогих вещей
+								</p>
+								<a href="#" class="item-main-slider__btn btn">
+									<span class="btn__body">
+										<span>присоединиться</span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="item-main-slider__bg _ibg">
+							<img src="img/header.jpg" alt="Luxtrader">
+						</div>
+					</div>
 					<div class="main-slider__item item-main-slider">
 						<div class="item-main-slider__content">
 							<div class="item-main-slider__container _container">
@@ -230,7 +260,7 @@
 										</div>
 									</div>
 									<a href="#" class="lot__title">
-										Chateau lafite 1949
+										Chateau lafite <br> 1949
 									</a>
 									<div class="lot__info info-lot">
 										<div class="info-lot__statistic">
@@ -284,7 +314,7 @@
 										</div>
 									</div>
 									<a href="#" class="lot__title">
-										Rolex paul newman daytona
+										Rolex paul newman <br> daytona
 									</a>
 									<div class="lot__info info-lot">
 										<div class="info-lot__statistic">
@@ -322,15 +352,69 @@
 									</a>
 								</div>
 							</div>
+							<div class="slider-lots__slide">
+								<div class="lot">
+									<div class="lot__header">
+										<a href="#" class="lot__image _ibg">
+											<img src="img/lot-01.jpg" alt="Lot">
+										</a>
+										<div class="lots__timer timer-lot">
+											<div class="timer-lot__icon">
+												<img src="img/timer-icon.png" alt="timer">
+											</div>
+											<div class="timer-lot__item">
+												3:21:45:37
+											</div>
+										</div>
+									</div>
+									<a href="#" class="lot__title">
+										Arnold & Son worldtimer discovery of antarctica
+									</a>
+									<div class="lot__info info-lot">
+										<div class="info-lot__statistic">
+											<div class="info-lot__icon">
+												<img src="img/eye.png" alt="Eye">
+											</div>
+											<div class="info-lot__value">
+												1 098
+											</div>
+										</div>
+										<div class="info-lot__current-bet current-bet-info-lot">
+											<div class="current-bet-info-lot__label">
+												Текущая ставка
+											</div>
+											<div class="current-bet-info-lot__value">
+												18 999 203
+											</div>
+											<div class="current-bet-info-lot__currency">
+												₴
+											</div>
+										</div>
+										<div class="info-lot__statistic">
+											<div class="info-lot__icon">
+												<img src="img/hand.png" alt="Hand">
+											</div>
+											<div class="info-lot__value">
+												75
+											</div>
+										</div>
+									</div>
+									<a href="#" class="lot__btn btn btn__big">
+										<span class="btn__body">
+											<span>Поднять ставку</span>
+										</span>
+									</a>
+								</div>
+							</div>
 						</div>
 						<div class="slider-lots__control control-slider-lots">
-							<div class="control-slider-lots__arrow">
+							<div class="control-slider-lots__arrow control-slider-lots__arrow_prev">
 								<span></span>
 							</div>
 							<a href="#" class="control-slider-lots__link">
 								Все лоты
 							</a>
-							<div class="control-slider-lots__arrow">
+							<div class="control-slider-lots__arrow control-slider-lots__arrow_next">
 								<span></span>
 							</div>
 						</div>
@@ -662,18 +746,35 @@
 					</div>
 					<div class="quotes__slider slider-quotes">
 						<div class="slider-quotes__body">
-							<div class="slider-quotes__slide">
-								<div class="slider-quotes__image">
-									<img src="img/MT.png" alt="Марк Твен">
-								</div>
-								<div class="slider-quotes__content">
-									<div class="slider-quotes__title">
-										«Легче одурачить людей, чем убедить их в том,
-										что они одурачены»
+							<div class="slider-quotes__wrapper">
+								<div class="slider-quotes__slide">
+									<div class="slider-quotes__image">
+										<img src="img/MT.png" alt="Марк Твен">
 									</div>
-									<div class="slider-quotes__info">
-										<p>Марк Твен</p>
-										<p>1835 -1910</p>
+									<div class="slider-quotes__content">
+										<div class="slider-quotes__title">
+											«Легче одурачить людей, чем убедить их в том,
+											что они одурачены»
+										</div>
+										<div class="slider-quotes__info">
+											<p>Марк Твен</p>
+											<p>1835 -1910</p>
+										</div>
+									</div>
+								</div>
+								<div class="slider-quotes__slide">
+									<div class="slider-quotes__image">
+										<img src="img/MT.png" alt="Марк Твен">
+									</div>
+									<div class="slider-quotes__content">
+										<div class="slider-quotes__title">
+											«Легче одурачить людей, чем убедить их в том,
+											что они одурачены»
+										</div>
+										<div class="slider-quotes__info">
+											<p>Марк Твен</p>
+											<p>1835 -1910</p>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -904,6 +1005,9 @@
 			</div>
 		</footer>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	<script src="js/main.min.js"></script>
 </body>
 
